@@ -1,0 +1,12 @@
+#!/bin/sh
+'''exec' "/Users/azizalbastaki/Desktop/School/2020-2022/Computing 2020-22/Waterfall COVID project/venv/bin/python" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from panda3d_tools import pfm_bba
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(pfm_bba())
