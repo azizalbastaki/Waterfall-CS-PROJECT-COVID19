@@ -8,4 +8,5 @@ class COVID_EVENTS():
         self.camera.setH(h)
 
     def event1(self):
-        pass
+        self.move(-5.54144, 83.5459, 4)
+        self.rotate()
